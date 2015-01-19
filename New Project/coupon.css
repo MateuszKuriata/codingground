@@ -1,0 +1,664 @@
+.lsm_Coupon{
+    background         : #e00000;
+    padding            : 5px;
+    position           : initial;
+    width: 230px;
+    font-size          : 11px;
+    line-height        : 12px;
+    font-family        : Tahoma, Arial, Helvetica;  
+    overflow           : hidden;
+}
+
+.SubBetContaier{
+    background-color   : #B30303;
+    clear              : both;
+}
+
+
+.lsm_Coupon .lsm_Coupon_SingleBet {
+    border-bottom      : 1px solid #ff2b2b; 
+    padding            : 0px 0px;
+}
+
+
+.lsm_Coupon .Top {
+    padding            : 0 10px;
+    margin-top         : 0px;
+    height             : 35px;
+}
+
+.lsm_Coupon .Top H3 {
+    margin             : 0;
+    padding            : 0;
+    line-height        : 34px;
+    font-weight        : bold;
+    color              : #ffffff;
+    font-size          : 22px;
+    position           : absolute;
+    text-shadow        : 1px 1px #000;
+}
+
+h4.BetsCounter {
+    float              : right;
+}
+
+.lsm_Coupon .lsm_Coupon_top {
+    color              : #000;
+    font-weight        : bold;
+    white-space        : nowrap;
+    width              : auto;
+    vertical-align     : top;
+    height             : 16px;
+    background-color   : #940000;
+}
+
+.lsm_Coupon_CodPub{
+    line-height        : 17px;
+    vertical-align     : top;
+    font-size          : 11px;
+    cursor             : default;
+    float              : left;
+    width              : 42px;
+}
+
+
+.lsm_Coupon_SubEvents b,
+.lsm_Coupon_labelL b{
+    color              : white;
+    display            : inline-block;
+    overflow           : hidden;
+    white-space        : nowrap;
+    height             : 15px;
+    width              : 12px;
+    text-align         : center;
+}
+
+
+.lsm_Coupon_SubEvent {
+    color              : white;
+    display            : inline-block;
+    text-overflow      : ellipsis;
+    overflow           : hidden;
+    white-space        : nowrap;
+    width              : calc(50% - 6px);
+    height             : 12px;
+    text-align         : left;
+    margin-right       : -2px;
+}
+
+.lsm_Coupon_SubEvent:first-child {
+   text-align          : left;
+   margin-left         : 5px;
+}
+
+.couponSubBet {
+    top                : 0px;
+    overflow           : hidden;
+}
+
+.lsm_Coupon_Sign{
+    max-width          : 85px;
+    overflow           : hidden;
+    text-overflow      : ellipsis;
+    white-space        : nowrap;
+    display            : inline-block;
+    margin-left        : 5px;
+}
+
+.lsm_Coupon .lsm_Coupon_Delete,
+.lsm_Coupon .lsm_Coupon_quotation,
+.lsm_Coupon .lsm_Coupon_Banker{
+    float              : right;
+    display            : inline;
+    font-weight        : 600;
+    font-size          : 12px;
+    color              : black;
+    cursor             : pointer;
+    width              : 10px;
+    margin-right       : 3px;
+    margin-top         : 2px;
+    text-align         : center;
+}
+.lsm_Coupon .lsm_Coupon_Delete{
+    margin-top         : 0px;
+}
+.lsm_Coupon .lsm_Coupon_quotation{
+    font-size          : 10px;
+    font-weight        : bold;
+    background         : #fff;
+    text-align         : center;
+    border-radius      : 2px;
+    font-style         : italic;
+    font-family        : serif;
+} 
+
+.lsm_Coupon .lsm_Coupon_Banker{
+    display            :none;
+    /* margin-left: 5px; */
+    width              : 12px;
+    margin-top         : 2px;
+    background         : #000;
+    color              : #999;
+    font-size          : 11px;
+    font-weight        : normal;
+    margin-right       : 2px;
+    border-radius      : 2px;
+}
+
+.lsm_Coupon .lsm_Coupon_Banker.active{
+    color              : #fff;
+}
+
+.lsm_Coupon .lsm_Coupon_Event {
+    padding-left       : 5px;
+}
+
+.lsm_Coupon .lsm_Coupon_middle {
+    padding            : 5px 0px 0px 0px;
+    font-weight        : 900;
+} 
+
+.lsm_Coupon .lsm_Coupon_Value {
+
+    padding-right      : 5px;
+    font-weight        : 900;
+    width              : 35px;
+    float              : right;
+    text-align         : right;
+}
+
+
+.lsm_Coupon .lsm_Coupon_Old_Value {
+    text-decoration    : line-through;
+    opacity            : 0.9;
+    width              : 45px;
+    float              : right;
+    text-align         : left;
+}
+
+
+#lsmID_Coupon_PossibleWinSingle {
+    text-overflow      : ellipsis;
+    white-space        : nowrap;
+    overflow           : hidden;
+    max-width          : 62px;
+}  
+
+.lsm_Coupon input.lsm_Coupon_Bet_input_Amount,
+.lsm_Coupon input.lsm_Coupon_Bet_input_Amount_All
+{
+    width              : 40px;
+    height             : 10px;
+    float              : right;
+    margin-right       : 2px;
+    background         : white;
+    text-align         : right;
+}
+
+.lsm_Coupon input.lsm_Coupon_Bet_input_Amount
+{
+    display            : none;
+}
+
+.lsm_Coupon .lsm_Coupon_PossibleWinSingle{
+    display            : none;
+}
+
+@keyframes  blinkcoupon {  
+    0% { background-color: red; }
+    50% { background-color: black; }
+    100% { background-color: red; }
+}
+@-webkit-keyframes  blinkcoupon {
+     0% { background-color: red; }
+    50% { background-color: black; }
+    100% { background-color: red; }
+}
+.lsm_Coupon span.lsm_Coupon_Value.blink {
+    -webkit-animation: blinkcoupon 0.5s linear infinite;
+    -moz-animation: blinkcoupon 0.5s linear infinite;
+    -ms-animation: blinkcoupon 0.5s linear infinite;
+    -o-animation: blinkcoupon 0.5s linear infinite;
+    animation: blinkcoupon 0.5s linear infinite;
+} 
+
+.lsm_Coupon .couponMode{
+    height             : 23px;
+    width              : 100%;
+    overflow           : hidden;
+    position           : relative;
+}
+
+.lsm_Coupon .header_single,
+.lsm_Coupon .header_multiple,
+.lsm_Coupon .header_combined,
+.lsm_Coupon .header_integral{
+    float              :left;
+    top                : 0;
+    display            : block;
+    font-size          : 12px;
+    font-weight        : bold;
+    line-height        : 22px;
+    height             : 21px;
+    width              : 33%;
+    text-align         : center;
+    text-transform     : uppercase;
+    cursor             : pointer;
+    background-color   : #e00000;
+}
+
+.lsm_Coupon .header_modes,
+.lsm_Coupon .header_integral_modes{
+    top                : 0;
+    width              : 100%;
+    display            : block;
+    border-bottom      : 1px solid #FF5F5F;
+    height             : 22px;
+}
+
+.lsm_Coupon span.header_single.active,
+.lsm_Coupon span.header_multiple.active,
+.lsm_Coupon span.header_combined.active,
+.lsm_Coupon span.header_integral.active{
+    background-color  : #B43838 ;
+    padding-bottom    : 4px;
+    border            : 1px solid #FF5F5F;
+    margin-right      : -1px;
+    
+}
+
+.lsm_Coupon span.header_single.unactive,
+.lsm_Coupon span.header_multiple.unactive,
+.lsm_Coupon span.header_combined.unactive,
+.lsm_Coupon span.header_integral.unactive{
+    opacity            : 0.6;
+}
+
+.lsm_Coupon .SingleAllAmount{
+    display            : none;
+    height             : 100%;
+    width              : 100%;
+    margin-top         : 2px;
+    margin-bottom      : -1px;
+    overflow           : hidden;
+    background-color   : #B43838;
+    padding-top        : 5px;
+}
+
+.lsm_Coupon .CombinedAllAmount{
+    display            : none;
+    height             : 100%;
+    width              : -moz-calc(100% - 2px);
+    width              : -webkit-calc(100% - 2px);
+    width              : -o-calc(100% - 2px);
+    width              : calc(100% - 2px);
+    overflow           : hidden;
+    border             : 1px solid #FF5F5F;
+    border-bottom      : none;
+    background-color   : #B43838;
+    padding-top        : 3px;
+    margin-top         : 3px;
+}
+
+.lsm_Coupon input.SingleAllAmountValue
+{
+    width              : 40px;
+}
+
+
+.lsm_Coupon input.CombinedAllAmountValue{
+    width              : 40px;
+    margin             : 0px 2px 0px 0px;
+}
+.lsm_Coupon.freeze input.CombinedAllAmountValue{
+    background         : #ccc;
+    border-color       : #ccc;
+}
+
+div.lsm_Coupon_bets {
+    padding-top        : 2px;
+    width              : 100%;
+}
+
+.lsm_Coupon .lsm_Coupon_summary{
+    min-height         : 60px;
+    width              : -moz-calc(100% );
+    width              : -webkit-calc(100%);
+    width              : -o-calc(100% );
+    width              : calc(100% );
+    background-color   : #DD2020;
+}
+
+
+.lsm_Coupon #lsm_summaryBlock{
+    margin-top         : 5px;
+}
+
+
+
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_PossibleMinWin,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_PossibleMaxWin,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_TotalStake,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_amount,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_Bonus,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_StakeTotal,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_factor,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_CombinationsSum,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_PossibleWin{
+     height            : 21px;
+}
+
+
+
+
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_CombinationsSum,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_Bonus,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_PossibleMinWin,
+.lsm_Coupon .lsm_Coupon_summary .lsm_Coupon_PossibleMaxWin{
+    
+    border-top: 1px solid #FF4652;
+}
+
+
+
+
+.lsm_Coupon div.lsm_Coupon_combinations{
+    display            : none;
+    height             : auto;
+    width              : 100%;
+    position           : relative; 
+}
+.lsm_Coupon div.lsm_Coupon_combinations.freeze, 
+.lsm_Coupon.freeze div.lsm_Coupon_combinations.freeze{
+    color              : #ddd;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+.lsm_Coupon.freeze div.lsm_Coupon_combinations{
+    color              : #ddd;
+}
+
+
+.lsm_Coupon div.lsm_Coupon_Combined_header {
+    height             : 15px;
+    width              : -moz-calc(100% - 2px);
+    width              : -webkit-calc(100% - 2px);
+    width              : -o-calc(100% - 2px);
+    width              : calc(100% - 2px);
+    overflow           : hidden;
+    border             : 1px solid #FF5F5F;
+    border-bottom      : none;
+    background-color   : #B43838;
+}
+
+
+
+.lsm_Coupon #lsm_Coupon_combinations_var{
+    -o-transition      : all .2s linear;
+    -moz-transition    : all .2s linear;
+    transition         : all .2s linear;
+    opacity            : 1;
+}
+
+.lsm_Coupon .opacity{
+    opacity            : 0.3!important;
+}
+
+
+
+.lsm_Coupon .lsm_Coupon_Combined_variations{
+    border-bottom      : 1px solid #F66D6D;
+    border-left        : 1px solid #F66D6D;
+    border-right       : 1px solid #F66D6D;
+    overflow           : hidden;
+}
+
+.lsm_Coupon .lsm_Coupon_Combined_variations:first-child{
+    border-top         : 1px solid #F66D6D;
+}
+
+
+
+    
+.lsm_Coupon_Combined_variations_top{
+    border-bottom      : 1px solid #F66D6D;
+    background-color   : #940000;
+    height             : 16px;
+}
+
+
+div.lsm_Coupon_Combined_variations_middle {
+    background-color   : #B30303;
+    padding            : 0px;
+    clear              : both;
+    overflow           : hidden;
+}
+
+div.lsm_Coupon_Combined_variations_bottom {
+    background-color   : #B30303;
+    clear              : both;
+    overflow           : hidden;
+}
+
+.lsm_Coupon span.lsm_Coupon_Combined_combo{
+    cursor             : default;
+}
+
+.lsm_Coupon span.lsm_Coupon_Combined_combo p{
+    font-size          : 9px;
+    line-height        : 12px;
+    margin             : 0px;
+}
+
+.lsm_Coupon span.lsm_Coupon_checkbox{
+    width              : 46px;  
+    display            : block;
+    float              : left;
+}
+
+.lsm_Coupon .lsm_Coupon_Combined_checkbox {
+    margin             : 1px;
+    padding            : 0px;
+    float              : left;
+    margin-left        : 5px;
+}
+
+.lsm_Coupon span.lsm_Coupon_combo{
+    width              : 70px;  
+    margin-left        : 5px;
+    display            : block;
+    float              : left;
+    text-overflow      : ellipsis;
+    white-space        : nowrap;
+    overflow           : hidden;
+    margin-top         : 2px;
+}
+ 
+.lsm_Coupon span.lsm_Coupon_Stake {
+    width              : 50px;
+    display            : block;
+    float              : right;
+    text-align         : right;
+    margin-right       : 5px;
+}
+
+.lsm_Coupon span.lsm_Coupon_MinMax{
+    width              : 82px;
+    display            : inline-block;
+    padding-bottom     : 1px;
+    margin-left        : 5px;
+    float              : left;
+}
+
+.lsm_Coupon span.lsm_Coupon_Factor,
+.lsm_Coupon span.lsm_Coupon_Pwin{
+    width              : 110px;
+    display            : inline-block;
+    padding-bottom     : 0px;
+    margin-right       : 5px;
+    text-align         : right;
+    float              : right;
+    overflow           : hidden;
+    text-overflow      : ellipsis;
+    white-space        : nowrap;
+
+}
+
+
+.lsm_Coupon input.lsm_Coupon_Combined_Stake {
+    width              : 40px;
+    height             : 10px;
+    text-align         : right;
+    font-size          : 11px;
+    font-family        : Tahoma, Arial, Verdana;
+}
+.lsm_Coupon.freeze input.lsm_Coupon_Combined_Stake {
+    background         : #ccc;
+    border             : 1px solid #ccc;
+}
+
+.lsm_Coupon_Stake_variations {
+    float              : right;
+    margin-right       : 3px;
+}
+ 
+
+
+.lsm_Coupon #Coupon_generate_button{
+    margin-left        : 8px;
+    position           : relative;
+    float              : right;
+}
+
+.lsm_Coupon #Coupon_modify_button{
+    display            : none;
+}
+.lsm_Coupon.freeze #Coupon_modify_button{
+    display            : block;
+}
+
+.lsm_Coupon .lsm_Coupon_teams{
+    padding-right      : 0px;
+    font-weight        : 900;
+    width              : calc(100% - 60px);
+    overflow           : hidden;
+    float              : left;
+}
+.lsm_Coupon[type=combined] .lsm_Coupon_teams{
+    width              : calc(100% - 70px);
+}
+
+.lsm_Coupon .lsm_Coupon_labelL{
+    padding-right      : 0px;
+    font-weight        : 900;
+    max-width          : 150px;
+    overflow           : hidden;
+    margin-left        : 5px;
+}
+
+.lsm_Coupon .lsm_Coupon_labelR{
+    float              : right;
+    padding-right      : 5px;
+    font-weight        : 900;
+    cursor             : help; 
+    margin             : 4px 0px 0px 0px; 
+
+}
+
+.lsm_Coupon .lsm_Coupon_InputAmount{
+    float              : right;
+    margin-right       : 5px;
+    font-weight        : 900;
+    width              : 80px;
+    height             : 10px;
+    text-align         : right;
+    font-size          : 11px;
+    font-family        : Tahoma, Arial, Helvetica;
+}
+.lsm_Coupon.freeze #lsmID_Coupon_CombinedTotalSum{
+    background         : #ccc;
+    border-color       : #ccc;
+}
+
+.lsm_Coupon .lsm_Coupon_InputAmountInv{
+    display            : none;
+    float              : right;
+    padding-right      : 5px;
+    font-weight        : 900;
+    width              : 50px;
+    height             : 11px;
+}
+
+
+.lsm_Coupon button.Coupon_button{
+    color              : #000;
+    background-color   : #F0F0F0;
+    text-transform     : uppercase;
+    font-weight        : bold;
+    width              : 30%;
+    height             : 20px;
+    border             : 1px solid #333;
+    box-shadow         : inset -1px 0px 2px #666;
+    margin-left        : 3%;
+    margin-top         : 5px;
+    margin-bottom      : 5px;
+    font-size          : 9px;
+    float              : right;
+}
+
+.lsm_Coupon button.Coupon_button:disabled{
+    color              : rgb(85, 85, 85);
+}
+
+.lsm_Coupon .Coupon_bottom{
+    
+    width              : 100%;
+    height             : auto;
+    float              : right;
+}
+
+
+.lsm_Coupon[type="combined"] .Coupon_bottom button.Coupon_button{
+    background-color   : #F5F5F5;
+}
+
+.lsm_Coupon[type="combined"] #Coupon_generate_button:disabled{
+    background-color   : #858585;
+}
+.lsm_Coupon[type="combined"] #Coupon_generate_button{
+    background-color   : #f5f5f5;
+}
+
+.lsm_Coupon.freeze[type="combined"] #Coupon_generate_button{
+    background-color: #858585;
+}
+
+.lsm_Coupon.freeze[type="combined"] #Coupon_modify_button{
+    background-color   : #F0F0F0;
+    color              : #000;
+}
+
+
+.lsm_Coupon #propagateValue,
+.lsm_Coupon #propagateValueCombined,
+.lsm_Coupon #propagateValueForAllCombined{
+    cursor            :pointer;
+}
+
+
+.lsm_Coupon .distanceFive{
+    margin-left       :5px !important;
+}
+
+.lsm_Coupon .show{
+    display            :block !important;
+}
+
+#combined_loading{
+    width        : 100%;
+    background   : #fff;
+    color        : #333;
+    position     : absolute;
+    top          : 50%;
+    text-align   : center;
+}
